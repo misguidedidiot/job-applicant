@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./src/main.css">
-    <title>Flip=flop model</title>
-</head>
-<body>
-    <header>
-        <h1>So you think you're flip-flop material?</h1>
-        <img src='./pics/captain-ron.jpg' alt="Captain Ron!">
-        <h2>Apply to be our Captain Ron:</h2>
-    </header>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="./src/main.css">
+            <title>Flip=flop model</title>
+        </head>
 
-    <main>
-        <form id="flip-flop-applicant">
-            <h2>-Future flip-flopper-</h2>
+    <body>
+        <header>
+            <h1>So you think you're flip-flop material?</h1>
+            <img src='./pics/captain-ron.jpg' alt="Captain Ron!">
+            <h2>Apply to be our Captain Ron:</h2>
+        </header>
 
-            <section>
-                <label for="name">Name:</label>
-                <input id="name" type="text" name="name">
-            </section>
+        <main>
+            <form id="flip-flop-applicant">
+                <h2>-Future flip-flopper-</h2>
 
-            <fieldset>
-                <legend>Do you have feet?</legend>
+                <section>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name">
+                </section>
 
-                <input id="have-feet-yes" type="radio" value="yes" name="have-feet">
-                <label for="have-feet-yes">YES!</label>
-                <input id="have-feet-no" type="radio" value="no" name="have-feet">
-                <label for="have-feet-no">NO!</label>
-            </fieldset>
+                <fieldset>
+                    <legend>Do you have feet?</legend>
 
-            <section>
-                <label for="flip-flop-destination">Favorite place to wear flip-flops?</label>
-                <select id="flip-flop-destination" name="flip-flop-destination">
-                    <option value="" hidden disabled selected>Flip-flop comfort zone</option>
-                    <option value="beach">The beach</option>
-                    <option value="bbq">Backyard BBQ</option>
-                    <option value="funeral">Grandma's funeral</option>
-                    <option value="dennys">Denny's corner booth</option>
-                    <option value="reunion">20 year high school reunion</option>
-                </select>
-            </section>
+                    <input id="feet-yes" type="radio" value="yes" name="have-feet">
+                    <label for="feet-yes">YES!</label>
+                    <input id="feet-no" type="radio" value="no" name="have-feet">
+                    <label for="feet-no">NO!</label>
+                </fieldset>
 
-            <fieldset>
-                <legend>What season is flip-flop season?</legend>
+                <section>
+                    <label for="destination">Favorite place to wear flip-flops?</label>
+                    <select id="destination" name="destination">
+                        <option value="" hidden disabled selected>Flip-flop comfort zone</option>
+                        <option value="beach">The beach</option>
+                        <option value="bbq">Backyard BBQ</option>
+                        <option value="funeral">Grandma's funeral</option>
+                        <option value="dennys">Denny's corner booth</option>
+                        <option value="reunion">20 year high school reunion</option>
+                    </select>
+                </section>
 
-                <input id="summer" type="checkbox" name="season" value="summer">
-                <label for="summer">Summer</label>
-                <input id="spring" type="checkbox" name="season" value="spring">
-                <label for="spring">Spring</label>
-                <input id="fall" type="checkbox" name="season" value="fall">
-                <label for="fall">Fall</label>
-                <input id="winter" type="checkbox" name="season" value="winter">
-                <label for="winter">Winter</label>
-            </fieldset>
+                <fieldset>
+                    <legend>What season is flip-flop season?</legend>
 
-            <section>
-                <label for="sweet-feet">How sweet are your feet?</label>
-                <input id="sweet-feet" type="range" name="sweet-feet" min="1" max="10" required>
-            </section>
+                    <input id="summer" type="checkbox" name="season" value="summer">
+                    <label for="summer">Summer</label>
+                    <input id="spring" type="checkbox" name="season" value="spring">
+                    <label for="spring">Spring</label>
+                    <input id="fall" type="checkbox" name="season" value="fall">
+                    <label for="fall">Fall</label>
+                    <input id="winter" type="checkbox" name="season" value="winter">
+                    <label for="winter">Winter</label>
+                </fieldset>
 
-            <section>
-                <h2>You're a flip-flop philanderer!</h2>
-                <button>Submit</button>
-            </section>
+                <section>
+                    <label for="sweet-feet">How sweet are your feet?</label>
+                    <input id="sweet-feet" type="range" name="sweet-feet" min="1" max="10" required>
+                </section>
 
+                <section>
+                    <h2>You're a flip-flop philanderer!</h2>
+                    <button>Submit</button>
+                </section>
 
-        </form>
-    </main>
+            </form>
+        </main>
 
-        
-        
-    
+        <script type="module" src=""></script>
     </body>
 </html>
