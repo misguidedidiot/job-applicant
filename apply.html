@@ -8,69 +8,74 @@
             <title>Flip=flop model</title>
         </head>
 
-    <body>
-        <header>
-            <h1>So you think you're flip-flop material?</h1>
-            <img src='./pics/captain-ron.jpg' alt="Captain Ron!">
-            <h2>Apply to be our Captain Ron:</h2>
-        </header>
+    <body class="vignette">
+        <div class="full-border">
+            <header>
+                <h1>Are you Captain Ron material?</h1>
+                <img id='captain-ron-image' src='./pics/captain-ron.jpg' alt="Captain Ron!">
+                <h1>Apply below:</h1>
+            </header>
 
-        <main>
-            <form id="flip-flop-applicant">
-                <h2>-Future flip-flopper-</h2>
+            <main>
+                <div>
+                    <form id="flip-flop-applicant">
+                        <h2>-Future flip-flopper-</h2>
 
-                <section>
-                    <label for="name">Name:</label>
-                    <input id="name" type="text" name="name">
-                </section>
+                        <section>
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="name">
+                        </section>
 
-                <fieldset>
-                    <legend>Do you have feet?</legend>
+                        <fieldset>
+                            <legend>Do you have feet?</legend>
 
-                    <input id="feet-yes" type="radio" value="yes" name="have-feet">
-                    <label for="feet-yes">YES!</label>
-                    <input id="feet-no" type="radio" value="no" name="have-feet">
-                    <label for="feet-no">NO!</label>
-                </fieldset>
+                            <input id="feet-yes" type="radio" value="yes" name="have-feet">
+                            <label for="feet-yes">YES!</label>
+                            <input id="feet-no" type="radio" value="no" name="have-feet">
+                            <label for="feet-no">NO!</label>
+                        </fieldset>
 
-                <section>
-                    <label for="destination">Favorite place to wear flip-flops?</label>
-                    <select id="destination" name="destination">
-                        <option value="" hidden disabled selected>Flip-flop comfort zone</option>
-                        <option value="beach">The beach</option>
-                        <option value="bbq">Backyard BBQ</option>
-                        <option value="funeral">Grandma's funeral</option>
-                        <option value="dennys">Denny's corner booth</option>
-                        <option value="reunion">20 year high school reunion</option>
-                    </select>
-                </section>
+                        <section>
+                            <label for="destination">Favorite place to wear flip-flops?</label>
+                            <select id="destination" name="destination">
+                                <option value="" hidden disabled selected>Flip-flop comfort zone</option>
+                                <option value="beach">The beach</option>
+                                <option value="bbq">Backyard BBQ</option>
+                                <option value="funeral">Grandma's funeral</option>
+                                <option value="dennys">Denny's corner booth</option>
+                                <option value="reunion">20 year high school reunion</option>
+                                <option value="divorce">Child support hearing</option>
+                            </select>
+                        </section>
 
-                <fieldset>
-                    <legend>What season is flip-flop season?</legend>
+                        <fieldset>
+                            <legend>What season is flip-flop season?</legend>
 
-                    <input id="summer" type="checkbox" name="season" value="summer">
-                    <label for="summer">Summer</label>
-                    <input id="spring" type="checkbox" name="season" value="spring">
-                    <label for="spring">Spring</label>
-                    <input id="fall" type="checkbox" name="season" value="fall">
-                    <label for="fall">Fall</label>
-                    <input id="winter" type="checkbox" name="season" value="winter">
-                    <label for="winter">Winter</label>
-                </fieldset>
+                            <input id="summer" type="checkbox" name="season" value="summer">
+                            <label for="summer">Summer</label>
+                            <input id="spring" type="checkbox" name="season" value="spring">
+                            <label for="spring">Spring</label>
+                            <input id="fall" type="checkbox" name="season" value="fall">
+                            <label for="fall">Fall</label>
+                            <input id="winter" type="checkbox" name="season" value="winter">
+                            <label for="winter">Winter</label>
+                        </fieldset>
 
-                <section>
-                    <label for="sweet-feet">How sweet are your feet?</label>
-                    <input id="sweet-feet" type="range" name="sweet-feet" min="1" max="10" required>
-                </section>
+                        <section>
+                            <label for="sweet-feet">How sweet are your feet?</label>
+                            <input id="sweet-feet" type="range" name="sweet-feet" min="1" max="10" required>
+                        </section>
 
-                <section>
-                    <h2>You're a flip-flop philanderer!</h2>
-                    <button>Submit</button>
-                </section>
+                        <section>
+                            <h2>You're a flip-flop philanderer!</h2>
+                            <button>Submit</button>
+                        </section>
 
-            </form>
-        </main>
+                    </form>
+                </div>
+            </main>
 
-        <script type="module" src="./src/apply.js"></script>
+            <script type="module" src="./src/apply.js"></script>
+        </div>
     </body>
 </html>
