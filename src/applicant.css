@@ -1,0 +1,56 @@
+body {
+    font-size: 50px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+dt {
+    background: #00AA8F;
+    color: white;
+    text-align: center;
+    padding-left: px;
+    font-size: .95em;
+    opacity: .75;
+    border-radius: 75%;
+}
+
+.data:hover {
+    opacity: 1;
+}
+
+dt:after {
+    content: ":";
+}
+
+dd {
+    margin-left: 5px;;
+    color: rgb(3, 0, 0);
+    text-shadow: 5px 0px 2px white; 
+    text-align: center;
+    font-size: .95em;
+    opacity: .75;
+    border-radius: 100;
+}
+
+dd:before{
+    content: "'";
+}
+
+dd:after {
+    content: "'"
+}
+
+#spicolli {
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 350px;
+    box-shadow: 10px 10px 8px #f8f6f6;
+}
