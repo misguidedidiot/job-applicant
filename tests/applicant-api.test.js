@@ -1,3 +1,4 @@
+import applicantApi from '../src/applicant-api.js';
 const test = QUnit.test;
 
 QUnit.module('applicant-api');
