@@ -5,7 +5,7 @@ const name = document.getElementById('name');
 const haveFeet = document.getElementById('have-feet');
 const destination = document.getElementById('destination');
 const season = document.getElementById('season');
-const sweetFeet = document.getElementById('sweetfeet');
+const sweetFeet = document.getElementById('sweet-feet');
 
 // get our applicant from the api
 const applicant = applicantApi.get();

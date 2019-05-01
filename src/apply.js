@@ -11,3 +11,11 @@ form.addEventListener('submit', (event) => {
     const applicant = getApplicant(formData);
     applicantApi.save(applicant);
 }); 
+
+
+const feetRange = document.getElementById('sweet-feet');
+const feetDisplay = document.getElementById('feet');
+
+feetRange.addEventListener('change', function() {
+    feetDisplay.textContent = feetRange.value;
+});
