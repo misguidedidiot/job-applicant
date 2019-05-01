@@ -2,19 +2,6 @@ const test = QUnit.test;
 
 QUnit.module('applicant-api');
 
-const applicantApi = {
-    save(applicant) {
-        const json = JSON.stringify(applicant);
-        localStorage.setItem('applicant', json);
-    },
-    get() {
-        const json = localStorage.getItem('applicant');
-        const applicant = JSON.parse(json);
-        return applicant;
-    }
-
-};
-
 test('round trip applicant', (assert) => {
     //Arrange
     // Set up your parameters and expectations
