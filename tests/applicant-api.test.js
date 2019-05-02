@@ -3,7 +3,12 @@ const test = QUnit.test;
 
 QUnit.module('applicant-api');
 
+applicantApi.storage = sessionStorage;
+const testStorage = sessionStorage;
+
 test('round trip application', (assert) => {
+    testStorage.removeItem('applicants');
+
     const applicant = { name: 'tester' };
 
     applicantApi.save(applicant);
@@ -13,7 +18,7 @@ test('round trip application', (assert) => {
 });
 
 test('no applicants return empty array', (assert) => {
-    localStorage.removeItem('applicants');
+    testStorage.removeItem('applicants');
     const expected = [];
 
     const applicants = applicantApi.getAll();
@@ -22,7 +27,7 @@ test('no applicants return empty array', (assert) => {
 });
 
 test('two saves return an array with items', (assert) => {
-    localStorage.removeItem('applicants');
+    testStorage.removeItem('applicants');
 
     const applicant1 = { name: 'tester1' };
     const applicant2 = { name: 'tester2' };
