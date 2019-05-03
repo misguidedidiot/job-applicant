@@ -1,0 +1,61 @@
+ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul li {
+    margin: 20px;
+    list-style: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+/* logo parts */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+}
+
+#new-tongue {
+    padding-top: 65px;
+    margin: -.5em;
+    border-radius: 100%;
+    position: relative;
+    z-index: -1;
+    height: 200px;  
+    top: -8px; 
+} 
+
+#ffff-logo {
+    position: relative;
+    left: 37px;
+    font-size: 100px;
+    color: rgb(240, 21, 6);
+    text-shadow: 0 0 10px rgb(5, 0, 0), 0 0 7px #0000ff;
+}
+
+#inc-logo {
+    font-size: 100px;
+    position: relative;
+    left:-15px;
+    color: rgb(240, 21,6);
+    text-shadow: 0 0 10px rgb(5, 0, 0), 0 0 7px #0000FF;
+}
+
+#trademark {
+        vertical-align:super;
+        font-size:50%;
+        position: relative;
+        left: -35px;
+        top: 20px;
+}
+/* end of logo  */
+
+
+
+
+
