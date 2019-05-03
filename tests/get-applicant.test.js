@@ -2,6 +2,8 @@ import getApplicant from '../src/get-applicant.js';
 const test = QUnit.test;
 
 
+
+
 test('return completed form object', function(assert) {
     //Arrange
     // Set up your parameters and expectations
@@ -19,7 +21,7 @@ test('return completed form object', function(assert) {
     formData.set('destination', expected.destination);
     formData.set('season', expected.season[0]);
     formData.append('season', expected.season[1]);
-    formData.set('sweet-feet', '10');
+    formData.set('gross-feet', '10');
 
     //Act 
     // Call the function you're testing and set the result to a const
