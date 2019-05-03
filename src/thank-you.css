@@ -1,0 +1,11 @@
+#thanks {
+    font-size: 100px;
+}
+
+#return-home {
+    font-size: 50px;
+}
+
+#return-home:hover {
+    opacity: .50;
+}

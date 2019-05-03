@@ -48,9 +48,4 @@ dd:after {
     content: "'"
 }
 
-#spicolli {
-    border-radius: 50%;
-    max-width: 500px;
-    max-height: 350px;
-    box-shadow: 10px 10px 8px #f8f6f6;
-}
+
