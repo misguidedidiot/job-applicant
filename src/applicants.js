@@ -1,10 +1,10 @@
-import ApplicantApi from './applicant-api.js';
+import applicantApi from './applicant-api.js';
 
 const tBody = document.getElementById('applicants');
 
 const applicants = applicantApi.getAll();
 
-for (let i = 0; i < applicants.length; i++) {
+for(let i = 0; i < applicants.length; i++) {
     const applicant = applicants[i];
 
     const tr = document.createElement('tr');
