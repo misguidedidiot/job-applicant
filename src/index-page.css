@@ -1,10 +1,6 @@
 /*button on apply page*/
 .button-index {
     display: inline-block;
-    /*text-decoration: none;
-    text-align: center;
-    font-size: 50px;
-    color: #FFF;*/
     width: 350px;
     height: 200px;
     border-radius: 40%;
@@ -45,3 +41,4 @@
     font-family: "alice", serif;
     font-size: 30px;
 }
+

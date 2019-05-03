@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
 }); 
 
 
-const feetRange = document.getElementById('sweet-feet');
+const feetRange = document.getElementById('gross-feet');
 const feetDisplay = document.getElementById('feet');
 
 feetRange.addEventListener('change', function() {

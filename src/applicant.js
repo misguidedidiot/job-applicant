@@ -5,7 +5,7 @@ const name = document.getElementById('name');
 const haveFeet = document.getElementById('have-feet');
 const destination = document.getElementById('destination');
 const season = document.getElementById('season');
-const sweetFeet = document.getElementById('sweet-feet');
+const grossFeet = document.getElementById('sweet-feet');
 
 // get our applicant from the api
 const applicant = applicantApi.get();
@@ -20,4 +20,4 @@ name.textContent = applicant.name;
 haveFeet.textContent = applicant.haveFeet;
 destination.textContent = applicant.destination;
 season.textContent = applicant.season;
-sweetFeet.textContent = applicant.sweetFeet;
+grossFeet.textContent = applicant.grossFeet;

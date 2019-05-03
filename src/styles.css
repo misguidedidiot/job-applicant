@@ -6,12 +6,12 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+
+    /* vignette on the background image */
     box-shadow: 0 0 150px rgba(0,0,0,1.3) inset;
     
   }
@@ -24,7 +24,7 @@ body {
         height: 100%;
         margin: auto;
         text-align: center;
-        position: fixed;
+        position: ;
         top: 0;
         left: 0;
         
@@ -48,7 +48,6 @@ form {
    background-color: lightgray;
    opacity: 0.75;
    padding: 50px;
-   /* padding-bottom: 25px; */
    font-family: 'Alice', serif;
    border: 10px solid black;
    margin: 0px, 0px, 25px, 0px;

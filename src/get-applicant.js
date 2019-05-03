@@ -1,6 +1,6 @@
 function getApplicant(formData) {
     const haveFeet = formData.get('have-feet') === 'yes';
-    const sweetFeet = parseInt(formData.get('sweet-feet'));
+    const sweetFeet = parseInt(formData.get('gross-feet'));
 
     const applicant = {
         name: formData.get('name'),
