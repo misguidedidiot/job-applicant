@@ -12,7 +12,7 @@ test('return completed form object', function(assert) {
         haveFeet: true,
         destination: 'beach',
         season: ['summer', 'spring'],
-        sweetFeet: 10,
+        grossFeet: 10,
     };
 
     const formData = new FormData(); 

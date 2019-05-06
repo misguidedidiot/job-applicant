@@ -7,8 +7,14 @@ const destination = document.getElementById('destination');
 const season = document.getElementById('season');
 const grossFeet = document.getElementById('gross-feet');
 
+//get the applicant name
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('id');
+
+
 // get our applicant from the api
-const applicant = applicantApi.get();
+const applicant = applicantApi.get(id);
+
 
 // no applicant? no can do, head back to home page...
 if(!applicant) {

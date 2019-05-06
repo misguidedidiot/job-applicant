@@ -42,11 +42,14 @@ section {
 
 form {
    display: inline-block;
-   background-color: lightgray;
+   background-color: rgb(14, 1, 1);
    opacity: 0.75;
    padding: 50px;
    font-family: 'Alice', serif;
-   border: 10px solid black;
+   color: white;
+   text-shadow: 0 0 5px blue;
+   font-size: 20px;
+   border: 10px solid rgb(163, 160, 160);
    margin: 0px, 0px, 25px, 0px;  
 }
 
