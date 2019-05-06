@@ -26,17 +26,4 @@ test('no applicants return empty array', (assert) => {
     assert.deepEqual(applicants, expected);
 });
 
-test('two saves return an array with items', (assert) => {
-    testStorage.removeItem('applicants');
 
-    const applicant1 = { name: 'applicant1' };
-    const applicant2 = { name: 'applicant2' };
-
-    applicantApi.save(applicant1);
-    applicantApi.save(applicant2);
-    const result = applicantApi.get(applicant2.name);
-    
-
-    assert.deepEqual(result, applicant2);
-
-});
